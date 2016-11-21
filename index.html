@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Авторизация</title>
+</head>
+<body>
+<nav class="col-10">
+    <ul class="main">
+        <li><a href="/"><span>Главная</span></a></li>
+        <li><a href="/"><span>Мои покупки</span></a></li>
+        <li><a href="/"><span>Контакты</span></a></li>
+        <li><a href="/"><span>Доставка</span></a></li>
+        <li><a href="/"><span>Войти/Выйти</span></a></li>
+    </ul>
+</nav>
+<div id="wrapper" class="col-10">
+    <div id="container" class="col-8">
+        <div id="inside">
+            <div id="symbol">
+
+            </div>
+            <div id="text">
+                <p>Авторизация</p><br>
+                <a href="/">Зарегистрироваться</a>
+            </div>
+            <form class="for-large-screens">
+                <div class="data"><label>Email<span>* </span></label><input type="email" name="email"></div><br>
+                <div class="data"><label>Пароль<span>* </span></label><input type="password" name="psw"></div><br>
+            </form>
+            <form class="for-small-screens">
+                <div class="data"><input type="email" name="email" placeholder="Email*"></div><br>
+                <div class="data"><input type="password" name="psw" placeholder="Пароль*"></div><br>
+            </form>
+            <div id="forget">
+                <input type="checkbox" name="remember" value="remember" checked> <label>Запомнить меня</label><br>
+                <p>Забыли пароль? <a href="/">Возобновить</a></p>
+            </div><br><br>
+
+        </div>
+        <input type="button" id="enter" value="Вход">
+    </div>
+</div>
+
+</body>
+</html>

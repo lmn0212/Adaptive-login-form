@@ -1,0 +1,182 @@
+@font-face {
+    font-family: Bauhaus;
+    src: url(fonts/BauhausC-Medium.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Navigation menu*/
+
+nav {
+    display: table;
+
+    margin: 0 auto;
+    height: 70px;
+    width: 720px;
+
+    background-color: rgb(77,111,51);
+
+    font-family: Bauhaus, "Times New Roman", sans-serif;
+    font-size: 15px;
+}
+nav .main {
+    list-style-type:none;
+    height: 100%;
+}
+nav .main {
+    text-align: center;
+}
+nav .main li {
+    float: left;
+    margin: 0 auto;
+
+    line-height: 400%;
+    width: 20%;
+}
+nav .main li a{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255,255,255);
+}
+nav .main li a span{
+    box-shadow: none;
+
+}
+
+nav .main li a:hover span{
+    padding-bottom: 10%;
+    box-shadow: 0 3px 0 rgb(242, 108, 79);
+}
+
+/*Form*/
+
+#wrapper {
+    margin: 0 auto;
+    display: flex;
+    height: 450px;
+    background: linear-gradient(#f2ebe8, #fdfdfd, #f2ebe8);
+}
+#container {
+    margin: auto;
+    border: 1px solid #c1c1c1;
+    width: 600px;
+    height: 380px;
+    background: #ffffff;
+    position: relative;
+    border-radius: 0 81px 81px 81px;
+}
+#inside {
+    margin: 40px 40px 60px 40px;
+}
+#symbol {
+    display: block;
+    content: '';
+    height: 38px;
+    width: 25px;
+    border-top: 8px solid #ff3a25;
+    border-left: 8px solid #ff3a25;
+    border-radius: 25px 0 0 0;
+}
+#text {
+    margin: -13px 0 0 20px;
+    padding-bottom: 13px;
+    border-bottom: 1px dashed #c1c1c1;
+}
+#text p {
+    font-family: Bauhaus, "Times New Roman", sans-serif;
+    font-size: 25px;
+
+}
+#text a {
+    color: #004714
+}
+.for-large-screens{
+    display: block;
+}
+.for-small-screens{
+    display: none;
+}
+.data {
+    margin-top: 24px;
+    float: right;
+    height: 30px;
+
+    font-family: Bauhaus, "Times New Roman", sans-serif;
+    font-size: 14px;
+}
+.data span {
+    margin-right: 20px;
+    color: #ff3a0e;
+}
+.data input {
+    height: inherit;
+    width: 304px;
+}
+#forget {
+    margin-top: 24px;
+    float: right;
+    width: 304px;
+
+    font-family: Bauhaus, "Times New Roman", sans-serif;
+    font-size: 14px;
+}
+#forget p {
+    margin-top: 15px;
+
+    font-family: initial;
+    font-size: 14px;
+    color: #6b646b;
+}
+#forget p a {
+    color: #004714;
+}
+#enter {
+    position: relative;
+    left: 36%;
+    bottom: -67px;
+
+    height: 42px;
+    width: 170px;
+    border-radius: 22px 22px 0 22px;
+
+    background-color: #00400e;
+    color: #fffcff;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (max-width: 793px) {
+    nav .main li {
+        float: none;
+    }
+    .for-large-screens {
+        display: none;
+    }
+    .for-small-screens{
+        display: block;
+    }
+
+}
+
+/* For desktop: */
+
+@media only screen and (min-width: 793px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
